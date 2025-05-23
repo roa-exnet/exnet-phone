@@ -1,0 +1,18 @@
+{
+    "name": "exnet-cloud",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "android": "vite build && npx cap sync android && npx cap open android"
+    },
+    "dependencies": {
+        "@capacitor/android": "latest",
+        "@capacitor/core": "latest"
+    },
+    "devDependencies": {
+        "typescript": "^5.8.3",
+        "vite": "^5.1.0"
+    }
+}

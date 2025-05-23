@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Exnet Connect</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div id="connect-screen" class="">
+    <div class="connect-container">
+      <div class="connect-header">
+        <h1>EXNET</h1>
+        <p class="tagline">Tu propio internet</p>
+      </div>
+      
+      <h2 class="connect-title">Conectar a servidor Exnet</h2>
+      
+      <form id="connect-form">
+        <div class="input-group">
+          <input type="text" id="server-url" placeholder="https://symfony.exnet.cloud">
+          <button type="submit" class="connect-button">Conectar</button>
+        </div>
+      </form>
+      
+      <div class="recent-connections">
+        <h3>Conexiones recientes</h3>
+        <ul id="connections-list">
+          
+        </ul>
+      </div>
+      
+      <p class="connect-hint">Presiona Enter después de escribir para conectar directamente</p>
+    </div>
+  </div>
+
+  
+  <div id="main-app" class="container hidden">
+    <div class="topbar">
+      <button id="back" disabled>&larr;</button>
+      <button id="reload">&#x21bb;</button>
+      <span id="domain">google.es</span>
+      <button id="home">&#8962;</button>
+    </div>
+
+    <form id="go">
+      <input id="url" type="text" placeholder="https://mired.exnet.cloud">
+      <button type="submit">Abrir</button>
+    </form>
+
+    <iframe id="viewer"></iframe>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
